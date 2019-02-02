@@ -198,7 +198,6 @@ void function(window, document, undefined) {
   var reflowCells = function() {
     // Calculate new column count after resize.
     columnCount = getColumnCount();
-	alert(columnCount);
     if(columnHeights.length != columnCount) {
       // Reset array of column heights and container width.
       resetHeights(columnCount);
