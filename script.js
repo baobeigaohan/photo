@@ -6,7 +6,7 @@ void function(window, document, undefined) {
   "user strict";
 
   var MIN_COLUMN_COUNT = 1; // minimal column count
-  var COLUMN_WIDTH = 310;   // cell width: 190, padding: 14 * 2, border: 1 * 2
+  var COLUMN_WIDTH = 140;   // cell width: 190, padding: 14 * 2, border: 1 * 2
   var CELL_PADDING = 26;    // cell padding: 14 + 10, border: 1 * 2
   var GAP_HEIGHT = 5;      // vertical gap between cells
   var GAP_WIDTH = 5;       // horizontal gap between cells
@@ -162,7 +162,7 @@ void function(window, document, undefined) {
       cell.className = 'cell pending';
       cell.tagLine = 'demo picture ' + key;
       cells.push(cell);
-      front(cellTemplate, { 'title': 'demo picture ' + key, 'src': key, 'height': "auto", 'width': 310 }, cell);
+      front(cellTemplate, { 'title': 'demo picture ' + key, 'src': key, 'height': "auto", 'width': 140 }, cell);
       fragment.appendChild(cell);
     }
     pageCount++;
